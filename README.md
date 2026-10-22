@@ -5,9 +5,6 @@ A Python-based data migration pipeline that ingests legacy CSV
 and JSON records, validates and transforms them, and migrates
 clean records into a SQLite database.
 
-This is an independent portfolio project using fictional
-product inventory data. It is not affiliated with the LEGO Group.
-
 ## Features
 
 - CSV and JSON ingestion
@@ -27,27 +24,6 @@ product inventory data. It is not affiliated with the LEGO Group.
 - pytest
 - Git and GitHub
 - GitHub Actions
-
-## Architecture
-
-    CSV / JSON sources
-           |
-           v
-    Python ingestion
-           |
-           v
-    Normalization and validation
-           |
-           +------> Rejected-record JSON report
-           |
-           v
-    Duplicate resolution
-           |
-           v
-    SQLite upsert
-           |
-           v
-    Migration summary and reconciliation
 
 ## Getting Started
 
@@ -106,18 +82,3 @@ counts, duplicate resolution, upsert behavior, and idempotency.
 
 GitHub Actions runs the test suite on pushes and pull requests
 and executes the sample migration.
-
-## Limitations and Future Improvements
-
-- Add Parquet ingestion.
-- Add structured logging and configurable source paths.
-- Add dry-run mode and schema versioning.
-- Add an audit table for migration history.
-- Add stronger reconciliation between source and destination.
-- Explore Spark or a cloud data platform for larger datasets.
-
-## Disclaimer
-
-DataMigrPipe is an independent educational portfolio project.
-It does not use proprietary data or represent an official
-LEGO Group application.
