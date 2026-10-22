@@ -114,6 +114,7 @@ def test_migration_counts_and_rejected_report(tmp_path):
     assert all(item["errors"] for item in rejected)
 
 
+
 def test_json_record_wins_for_duplicate_id(tmp_path):
     database = tmp_path / "migration.db"
     rejected_file = tmp_path / "rejected.json"
@@ -127,10 +128,11 @@ def test_json_record_wins_for_duplicate_id(tmp_path):
             FROM products
             WHERE product_id = ?
             """,
-            ("TOY-101",),
+            ("INV-101",),
         ).fetchone()
 
-    assert product == ("Creative Wheels Pack - Updated", "8.25")
+    assert product == ("USB-C Hub - Updated", "21.25")
+
 
 
 def test_migration_is_idempotent(tmp_path):

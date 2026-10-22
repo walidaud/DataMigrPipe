@@ -1,7 +1,7 @@
 product_id,product_name,price,currency
-TOY-100,Brick Starter Set,19.99,usd
-TOY-101,Creative Wheels Pack,7.50,USD
-TOY-102,  Space Explorer Kit  ,49.95,usd
-TOY-103,,12.00,USD
-TOY-104,Mini Builder Pack,not-a-price,USD
-TOY-105,Duplicate Example,8.00,USD
+INV-100,Wireless Keyboard,29.99,usd
+INV-101,USB-C Hub,18.50,USD
+INV-102,  Portable SSD 1TB  ,89.95,usd
+INV-103,,12.00,USD
+INV-104,HDMI Adapter,not-a-price,USD
+INV-105,Duplicate Example,8.00,USD

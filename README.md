@@ -25,6 +25,10 @@ clean records into a SQLite database.
 - Git and GitHub
 - GitHub Actions
 
+## Architecture
+
+    Ca
+
 ## Getting Started
 
 ### Requirements
@@ -50,11 +54,11 @@ macOS/Linux:
     source .venv/bin/activate
     python -m pip install -r requirements.txt
 
-### Run the migration
+### Run migration
 
     python -m src.migrate
 
-The pipeline creates:
+The pipeline will creates:
 
 - output/migration.db
 - output/rejected_records.json
@@ -63,7 +67,7 @@ The pipeline creates:
 
     python -m pytest -v
 
-## Data Quality Rules
+## Data Quality
 
 - Product IDs are required and trimmed.
 - Product names are required and trimmed.
@@ -82,3 +86,14 @@ counts, duplicate resolution, upsert behavior, and idempotency.
 
 GitHub Actions runs the test suite on pushes and pull requests
 and executes the sample migration.
+
+## Limitations and Future Improvements
+
+- Add Parquet ingestion.
+- Add structured logging and configurable source paths.
+- Add dry-run mode and schema versioning.
+- Add an audit table for migration history.
+- Add stronger reconciliation between source and destination.
+- Explore Spark or a cloud data platform for larger datasets.
+
+
