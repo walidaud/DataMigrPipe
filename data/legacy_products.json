@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": "TOY-106",
+    "name": "Ocean Discovery Set",
+    "price": 34.5,
+    "currency": "usd"
+  },
+  {
+    "product_id": "TOY-101",
+    "product_name": "Creative Wheels Pack - Updated",
+    "price": "8.25",
+    "currency": "USD"
+  },
+  {
+    "product_id": "TOY-107",
+    "product_name": "Garden Builder Set",
+    "price": 22.0,
+    "currency": "EUR"
+  },
+  {
+    "product_id": "TOY-108",
+    "product_name": "Invalid Negative Price",
+    "price": -5,
+    "currency": "USD"
+  },
+  {
+    "product_id": "TOY-105",
+    "product_name": "Duplicate Example - JSON Wins",
+    "price": 9.25,
+    "currency": "USD"
+  }
+]

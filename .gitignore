@@ -1,0 +1,18 @@
+
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated migration output
+output/*.db
+output/*.sqlite
+output/rejected_records.json
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
